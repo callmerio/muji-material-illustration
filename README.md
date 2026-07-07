@@ -1,5 +1,7 @@
 # 归藏的材质插画 skill
 
+<img width="1600" height="900" alt="归藏的材质插画 skill 顶部封面" src="https://github.com/user-attachments/assets/fc24c36d-197e-4689-abe8-feb0471ac4e5" />
+
 ![GitHub stars](https://img.shields.io/github/stars/op7418/guizang-material-illustration?style=flat-square)
 ![Skill](https://img.shields.io/badge/Skill-Agent-111111?style=flat-square)
 ![Material Illustration](https://img.shields.io/badge/Material-Illustration-002FA7?style=flat-square)
