@@ -1,6 +1,4 @@
-# 归藏的材质插画 skill
-
-<img width="1600" height="900" alt="归藏的材质插画 skill 顶部封面" src="https://github.com/user-attachments/assets/fc24c36d-197e-4689-abe8-feb0471ac4e5" />
+# 歸藏的材质插画 skill
 
 ![GitHub stars](https://img.shields.io/github/stars/op7418/guizang-material-illustration?style=flat-square)
 ![Skill](https://img.shields.io/badge/Skill-Agent-111111?style=flat-square)
@@ -9,7 +7,9 @@
 ![Codex](https://img.shields.io/badge/Codex-Supported-222222?style=flat-square)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-Supported-6B5B95?style=flat-square)
 
-一个适配 Claude Code / Codex 等 Agent 环境的配图 Skill，用来把文章、笔记、图表截图、产品概念、工作汇报、教学材料和人文观点，生成**带中文标签的归藏材质插画**。
+一个适配 Claude Code / Codex 等 Agent 环境的配图 Skill，用来把文章、笔记、图表截图、产品概念、工作汇报、教学材料和人文观点，生成**带中文标签的歸藏材质插画**。
+
+<img width="1600" height="900" alt="歸藏的材质插画 skill 顶部封面" src="https://github.com/user-attachments/assets/fc24c36d-197e-4689-abe8-feb0471ac4e5" />
 
 它解决的是「中间那张图」的问题：社交卡片、PPT、文章和文档里经常需要一张能把意思讲清楚的中心配图，而不是一张漂亮但看不懂的装饰图。
 
@@ -17,7 +17,7 @@
 
 - **解释图**：把抽象概念、流程、机制、系统关系画成带标签的图。
 - **图表美化**：从截图或原始数据里抽取语义，重新生成更适合传播的材质化图表。
-- **参考辅助出图**：遇到冷门概念、品牌、模型、科学装置、历史物件时，先查参考信息和参考图，再统一转成归藏材质风格。
+- **参考辅助出图**：遇到冷门概念、品牌、模型、科学装置、历史物件时，先查参考信息和参考图，再统一转成歸藏材质风格。
 
 > 这是 [guizang-social-card-skill](https://github.com/op7418/guizang-social-card-skill) 的配套项目。Social Card Skill 负责整张卡片的标题、正文、主题色和尺寸；这个 Skill 负责卡片里的中心插画。
 
@@ -42,14 +42,14 @@ npx skills add https://github.com/op7418/guizang-material-illustration --skill g
 安装后直接对 Agent 说：
 
 ```text
-用归藏的材质插画 skill，帮我把这段产品说明做成一张带中文标签的机制图。
+用歸藏的材质插画 skill，帮我把这段产品说明做成一张带中文标签的机制图。
 ```
 
 也可以试这些请求：
 
 ```text
 把这篇文章挑 3 个核心概念，各生成一张带字配图。
-帮我把这张柱状图重新画成归藏材质风格，数据和坐标不要改。
+帮我把这张柱状图重新画成歸藏材质风格，数据和坐标不要改。
 这段讲 PKCE 的说明太抽象了，先查一下参考信息，再做一张流程图。
 给这篇小学科学课文做一张杠杆原理图，图里标出支点、用力点、阻力点和力臂。
 把这个周报整理成一张项目状态配图，包含进展、风险、决策、下周。
@@ -124,7 +124,7 @@ npx skills add https://github.com/op7418/guizang-material-illustration --skill g
 2. 哪些结构、部件、流程或图标不能画错。
 3. 观众靠什么稳定视觉线索一眼识别它。
 
-例如 PKCE、Andon、Zettelkasten、Kirkpatrick、Panopticon、某个模型 Logo、某个科学装置或历史物件，都适合先查参考信息，再进入统一的归藏材质插画风格。
+例如 PKCE、Andon、Zettelkasten、Kirkpatrick、Panopticon、某个模型 Logo、某个科学装置或历史物件，都适合先查参考信息，再进入统一的歸藏材质插画风格。
 
 ## 安装
 
@@ -190,7 +190,7 @@ guizang-material-illustration/
 ├── assets/
 │   └── prompt-template.md           # 可复用图像提示词模板
 └── references/
-    ├── visual-style.md              # 归藏材质插画风格、比例、安全区、主题色
+    ├── visual-style.md              # 歸藏材质插画风格、比例、安全区、主题色
     ├── prompt-patterns.md           # 循环、流程、Hub、对比、层级等提示结构
     ├── chart-beautify.md            # 图表语义抽取、数据优先重画、图标参考
     ├── use-cases-and-routing.md     # 支持场景与内部路由
