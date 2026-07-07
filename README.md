@@ -1,4 +1,4 @@
-# Guizang Material Illustration Skill · 归藏-材质-插画
+# 归藏的材质插画 skill
 
 ![GitHub stars](https://img.shields.io/github/stars/op7418/guizang-material-illustration?style=flat-square)
 ![Skill](https://img.shields.io/badge/Skill-Agent-111111?style=flat-square)
@@ -40,7 +40,7 @@ npx skills add https://github.com/op7418/guizang-material-illustration --skill g
 安装后直接对 Agent 说：
 
 ```text
-用归藏-材质-插画，帮我把这段产品说明做成一张带中文标签的机制图。
+用归藏的材质插画 skill，帮我把这段产品说明做成一张带中文标签的机制图。
 ```
 
 也可以试这些请求：
