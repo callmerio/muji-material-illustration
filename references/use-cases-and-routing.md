@@ -7,7 +7,7 @@ Use this reference to decide what kind of supporting image to create. The user s
 This skill generates supporting images. It does not own:
 
 - Full PPT structure or slide systems. Use the user's PPT skill for that.
-- Full Xiaohongshu / WeChat 3:4 text layout. Use the Guizang social-card skill for that.
+- Full Xiaohongshu / WeChat 3:4 text layout. Use the relevant social-card skill for that.
 - Exact editable vector diagrams or engineering CAD.
 - Pure logo design or brand identity systems.
 

@@ -1,6 +1,6 @@
 # Chart Beautify
 
-Use this reference when the user provides a chart screenshot, table, benchmark result, or metric list and wants a more polished Guizang-style chart.
+Use this reference when the user provides a chart screenshot, table, benchmark result, or metric list and wants a more polished MUJI-inspired restrained material chart.
 
 ## Principle
 
@@ -25,7 +25,7 @@ Discard:
 - Source bar shape, line style, spacing, shadows, and background.
 - Source screenshot crop and export artifacts.
 
-After extraction, redraw the chart in the Guizang material illustration style.
+After extraction, redraw the chart in the MUJI-inspired restrained material illustration style.
 
 Do not assume the source layout is worth preserving. If the source chart is plain, cramped, ugly, or the user only provides raw data, compose a new editorial data illustration from scratch.
 
@@ -51,7 +51,7 @@ Use this only when the original chart layout is already good and the user mainly
 
 - Keep the same chart type and approximate chart footprint.
 - Preserve the original reading order and emphasis.
-- Redraw the chart with Guizang materials, icons, and cleaner hierarchy.
+- Redraw the chart with restrained matte materials, simple geometry, and cleaner hierarchy.
 - Do not inherit source colors, typography, shadows, or background.
 
 ### Data-First Editorial Composition
@@ -105,19 +105,19 @@ Reference workflow:
 1. Search for 1-3 reference images per icon family, preferably official or widely recognized sources.
 2. Extract only the stable visual cue: silhouette, symbol type, geometry, motif, or icon metaphor.
 3. Prompt the image model to create a stylized 3D material icon based on that cue.
-4. Keep all icons in the same Guizang material system: off-white / light gray base, one accent color, soft studio shadows.
-5. Do not paste flat logos into the final chart unless the user explicitly asks for exact logos.
+4. Keep all icons in the same restrained material system: warm paper/off-white, light gray, cardboard, wood, or ceramic base, one muted accent, and soft diffuse shadows.
+5. Do not paste flat logos into the final chart. Convert stable visual cues into abstract unbranded icons instead.
 
 Prompt pattern:
 
 ```text
-Reference-informed icons: include a small 3D icon beneath each category, styled in the same white/gray/IKB blue material system. [Entity group A] uses a simplified [visual cue]. [Entity group B] uses a simplified [visual cue]. These are stylized brand cues, not pasted flat logos.
+Reference-informed icons: include a small matte material icon beneath each category, styled in the same warm paper/gray/natural-material system. [Entity group A] uses a simplified [visual cue]. [Entity group B] uses a simplified [visual cue]. These are abstract visual cues, not pasted flat logos or copied brand marks.
 ```
 
 Example:
 
 ```text
-GPT/OpenAI categories use a simplified interlocking knot icon. Claude categories use a simplified radial starburst icon. Gemini category uses a simplified four-point sparkle icon. These should be stylized brand cues, not pasted flat logos.
+GPT/OpenAI categories use a simplified knot-like icon. Claude categories use a simplified radial starburst icon. Gemini category uses a simplified four-point sparkle icon. These are abstract category cues, not pasted logos or copied brand marks.
 ```
 
 ## Prompt Requirements
@@ -141,11 +141,11 @@ Also include:
 
 Use the same visual language as labeled material illustrations:
 
-- Off-white background.
-- Black ink axes and clean gridlines.
-- Material bars or data marks with rounded edges and soft studio shadows.
-- One Guizang accent system. Use source colors only when the colors encode meaning that is not otherwise represented.
-- Small 3D icons may sit under category labels or beside row labels.
+- Warm off-white or paper background.
+- Charcoal axes and quiet gridlines.
+- Matte bars or data marks with soft diffuse shadows.
+- One muted material accent system. Use source colors only when they encode meaning that is not otherwise represented.
+- Small tactile icons may sit under category labels or beside row labels, but must not imitate branded products.
 - Keep the chart recognizable as a chart, not a decorative poster.
 
 Good chart enhancements:
@@ -183,10 +183,10 @@ If any number, category, or tick label is wrong, regenerate. Do not accept an at
 ```text
 Use case: infographic-diagram
 Asset type: 16:9 polished benchmark chart illustration
-Primary request: Create a polished material-style bar chart titled "Misaligned behavior". The chart must show four model scores on a y-axis from 1.0 to 3.0. Lower score is better. Preserve these exact data values and print the value above each bar: Sonnet 4.6 = 2.89, Mythos Preview = 1.95, Opus 4.8 = 2.10, Sonnet 5 = 2.53. Use vertical bars with subtle 3D material depth, soft studio shadows, rounded top edges, and small 3D model icons beneath each category.
+Primary request: Create a polished material-style bar chart titled "Misaligned behavior". The chart must show four model scores on a y-axis from 1.0 to 3.0. Lower score is better. Preserve these exact data values and print the value above each bar: Sonnet 4.6 = 2.89, Mythos Preview = 1.95, Opus 4.8 = 2.10, Sonnet 5 = 2.53. Use vertical bars with subtle matte material depth, soft diffuse shadows, restrained rounded edges, and small neutral material icons beneath each category.
 Required chart accuracy: y-axis tick labels must be exactly 1.0, 1.5, 2.0, 2.5, 3.0. Bar heights must match the values relative to this axis. Category labels must be exactly: "Sonnet 4.6", "Mythos Preview", "Opus 4.8", "Sonnet 5". Value labels must be exactly: "2.89", "1.95", "2.10", "2.53".
-Style/medium: clean Swiss editorial 3D vector-like chart, off-white background, black ink axis lines, refined gray surfaces, material columns, soft contact shadows, one vivid IKB blue accent (#002FA7), and restrained Guizang material colors.
+Style/medium: MUJI-inspired quiet Japanese utilitarian editorial chart, warm paper background, charcoal axis lines, matte cardboard/wood/ceramic surfaces, soft diffuse daylight, one muted indigo or clay accent, and no copied brand identity.
 Composition/framing: wide 16:9 chart, generous margins, no cropped labels, title centered at top, axis label on the left, clean gridlines.
 Text constraints: all text must be crisp, readable, and spelled exactly as specified. Do not add extra words beyond the title, axis label, tick labels, category labels, and value labels.
-Avoid: wrong numbers, wrong tick labels, extra categories, swapped bar order, distorted coordinate system, watermark, logo, decorative blobs, gradient background.
+Avoid: wrong numbers, wrong tick labels, extra categories, swapped bar order, distorted coordinate system, watermark, logo, brand name, copied packaging, proprietary typography, decorative blobs, neon, or dramatic gradient background.
 ```

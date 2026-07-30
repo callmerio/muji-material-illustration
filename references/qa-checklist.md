@@ -8,8 +8,8 @@ Run this before delivering final images.
 - The composition improves weak source screenshots into a clear, readable visual.
 - The whole subject fits; no important text, label, icon, object, or axis is cropped.
 - Text is readable at intended display size.
-- No accidental logos, watermarks, extra English, or misspelled Chinese.
-- The style is consistent with the Guizang material / Swiss editorial visual system.
+- The image does not contain MUJI or another brand name, logo, watermark, copied packaging, store signage, or proprietary typography unless the user explicitly requests a factual reference outside the image.
+- The style is consistent with the MUJI-inspired quiet utility / restrained material editorial system.
 - Negative constraints in the prompt protect the main risk: wrong data, clutter, wrong tone, unsupported facts, or cropped labels.
 
 ## Labels And Explainers
@@ -33,8 +33,8 @@ Run this before delivering final images.
 ## Reference-Informed Images
 
 - Reference cues are accurate enough for the intended audience.
-- Brand/model/entity icons are stylized into the shared material system.
-- The image does not paste flat logos unless explicitly requested.
+- Brand/model/entity icons are abstracted into the shared material system without copied logos, packaging, product silhouettes, or proprietary type.
+- The image does not paste flat logos or copied brand marks.
 - Historical, cultural, scientific, or biological details do not imply unsupported certainty.
 
 ## Education And Science

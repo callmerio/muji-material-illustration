@@ -1,38 +1,41 @@
-# Visual Style
+# MUJI-Inspired Visual Style
 
-Use this reference when generating Guizang-style labeled material illustrations.
+Use this reference when generating restrained, labeled material illustrations in a MUJI-inspired editorial direction. Treat MUJI as a high-level reference for quiet utility and natural materials, not as a request to reproduce a brand identity.
 
-## Default Look
+## Style Contract
 
-Use a clean Swiss editorial 3D illustration style:
+Use a quiet Japanese utilitarian editorial language:
 
-- Off-white studio background.
-- Black ink outlines and subtle gray physical surfaces.
-- One vivid accent color used for arrows, dots, active blocks, and label connectors.
-- Soft studio light, mild contact shadows, no dramatic gradients.
-- Diagram objects should feel like small physical models, not flat app UI.
-- The image should work as the central illustration inside a social card, slide, or article graphic.
+- Warm paper or unbleached off-white background, with visible but subtle paper, cardboard, wood, ceramic, or linen cues when they help the concept.
+- Matte, tactile surfaces with soft diffuse daylight and restrained contact shadows.
+- Thin charcoal linework, simple geometric forms, and functional labels rather than glossy app-like panels.
+- Generous whitespace, calm asymmetry, clear reading order, and one primary object or relationship per image.
+- A restrained, mostly neutral palette with one muted accent used only to show flow, emphasis, or data meaning.
+- Quietly editorial composition that feels useful and human-made, not luxurious, cinematic, cute, or decorative.
 
 Do not use:
 
-- Decorative blobs, bokeh, gradient orbs, stock-photo backgrounds.
-- Logos, watermarks, fake app chrome, fake brand marks.
-- Dense legends or paragraph text inside the image.
-- Tiny labels placed on busy surfaces.
-- Pure poster decoration that does not explain the user's idea.
-- Overly cute characters for serious business, scientific, financial, legal, or policy topics.
+- MUJI logos, wordmarks, store signage, copied packaging, proprietary typography, exact product silhouettes, or recognizable branded layouts.
+- Any brand name, fake logo, watermark, or invented product label inside the generated image.
+- Glossy plastic, metallic luxury finishes, neon colors, dramatic gradients, bokeh, decorative blobs, or cinematic backgrounds.
+- Dense dashboards, fake app chrome, paragraph text, or a poster that does not explain the user's idea.
+- Tiny labels on busy surfaces or cute characters that distract from serious work, science, finance, legal, or policy topics.
 
-## Accent Colors
+## Materials And Color
 
-Pick one accent per image set. Do not mix accents inside the same set unless the user asks for comparison.
+Start with warm neutrals, then add at most one muted accent per image set:
 
-- IKB Blue `#002FA7`: default; best for technical systems, AI, workflows.
-- Safety Orange `#FF6B35`: best for alerts, decision points, migration, risk, "watch this" content.
-- Lemon Green `#C5E803`: best for growth, compounding loops, health, finance, optimization.
-- Lemon Yellow `#FFD500`: best for teaching, summaries, highlights, beginner guides.
-- Signal Red `#E60012`: use sparingly for failure states, blockers, or strict review gates.
+- Paper: `#F3F0E8`
+- Natural cardboard: `#C9B99F`
+- Pale wood: `#D8C6A8`
+- Warm gray: `#B8B4AA`
+- Charcoal: `#3A3936`
+- Muted indigo: `#536879`
+- Clay: `#B87963`
+- Moss: `#78816C`
+- Ochre: `#B39A5A`
 
-In prompts, describe the accent in words and hex value, for example: `one vivid IKB blue accent (#002FA7)`.
+Use charcoal for primary text and axes. Use the muted accent for arrows, active steps, selected marks, or one highlighted object. Do not make every surface beige; preserve contrast and accessibility. If the data itself needs multiple colors, use a quiet neutral series plus only the minimum semantic colors required by the source.
 
 ## Ratios And Safe Area
 
@@ -40,30 +43,23 @@ Choose the ratio before prompting:
 
 - Social card image well: `wide horizontal 1.9:1`, designed for a `936x500` image well.
 - Slide/doc hero: `16:9`.
-- Square post inset: `1:1`, but only if the final layout really needs square.
+- Square post inset: `1:1`, only when the final layout needs square.
 
-Always ask the image model for:
+Always request:
 
-- Full subject visible.
-- Generous safe margins on all sides.
-- Labels away from edges.
-- No crop.
-- Centered vertically.
-
-If the final card has a known image well, name it in the prompt.
+- Full subject visible with generous safe margins on all sides.
+- Labels away from edges and placed on quiet paper areas or simple unbranded callout plates.
+- Centered vertical balance, no crop, and enough breathing room for the intended display size.
 
 ## Text Inside The Image
 
-Use image-generated text when the labels are part of the diagram. The labels should be printed callouts attached to objects or arrows.
+Use image-generated text only when labels are part of the diagram. Keep them short, horizontal, high-contrast, and functional:
 
-Label rules:
-
-- Use Simplified Chinese unless the user asks otherwise.
-- Keep labels short: 2-5 Chinese characters.
-- Use 3-5 labels per illustration.
-- Use clear spatial placement: top-left, top-center, top-right, bottom-center, right edge.
-- Ask for labels to be horizontal, large, high contrast, and readable.
-- Place labels on quiet off-white areas or simple white callout plates.
+- Simplified Chinese unless the user asks otherwise.
+- 2-5 Chinese characters is ideal; 6 is usually the upper limit.
+- 3-5 labels per illustration, with each label attached to its object or flow.
+- Neutral readable sans-serif lettering; never imitate a proprietary brand typeface.
+- No brand names, slogans, product copy, or extra words beyond the specified labels.
 
 Good labels:
 
@@ -72,35 +68,26 @@ Good labels:
 - `结果检查`
 - `下一轮`
 - `明确目标`
-- `AI 尝试`
-- `评估器`
-- `未过重试`
 - `时间触发`
-- `AI 巡检`
-- `外部系统`
-- `等下次`
 
-Avoid long labels:
+## Composition Patterns
 
-- `系统自动化地执行任务`
-- `根据评价结果进行下一轮迭代`
-- `用户输入的提示词内容`
+Prefer one simple metaphor per illustration:
 
-## Common Composition Patterns
+- Cycle: 3-4 quiet physical tokens around a circular flow.
+- Pipeline: a left-to-right sequence of paper cards, blocks, or small objects.
+- Hub-and-spoke: a central neutral routing object with sparse branches.
+- Before/after: a calm contrast between an unorganized and organized state.
+- Layer stack: stacked paper, wood, or matte blocks with readable side labels.
+- Data-first scene: a legible chart on a desk, shelf, notebook, or tabletop, with props kept subordinate.
+- Scientific mechanism: the correct object and force/process relationships with minimal decoration.
 
-- Cycle: arrange 3-4 objects in a circular flow with arrows.
-- Pipeline: place objects left-to-right with arrows and a return line only if needed.
-- Hub-and-spoke: put a routing hub in the middle, branches around it.
-- Before/after: left state and right state, with a transformation object in the middle.
-- Layer stack: vertical layers with labels beside each layer.
-
-Prefer one simple metaphor per illustration. Do not combine a cycle, a dashboard, a factory, and a roadmap in one image.
+Avoid combining a cycle, dashboard, factory, and roadmap in one image. Quiet style comes from editing the composition, not from removing the explanation.
 
 ## Tone Matching
 
-Match the subject:
-
-- Workplace reports should feel clear, calm, and credible.
-- Creator posts can be more editorial and metaphorical, but still explain one idea.
-- Education images can be friendly, but the mechanism should remain correct.
-- Humanities images can be symbolic, but should not pretend uncertain details are factual.
+- Workplace reports: calm, clear, credible, and practical.
+- Creator/editorial work: warm and observational, with one strong cognitive anchor.
+- Education: friendly through materials and composition, never through inaccurate decoration.
+- Science and technical topics: mechanism and labels outrank atmosphere.
+- Humanities: symbolic and restrained; do not present uncertain historical details as fact.
