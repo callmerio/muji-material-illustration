@@ -30,7 +30,7 @@ For brands and model families:
 
 - Prefer official brand pages, docs, or widely recognized references.
 - Extract geometry or motif only. Do not paste flat logos into the generated image.
-- Use "inspired by" language for high-level material or editorial cues, then convert the result into an abstract, unified material icon. Do not reproduce a branded product, logo, packaging, or proprietary type treatment.
+- Use high-level visual cues, then convert the result into an abstract, unified two-dimensional line icon. Do not reproduce a branded product, logo, packaging, or proprietary type treatment.
 
 For science:
 
@@ -49,7 +49,7 @@ For humanities:
 Do not dump references into the image prompt. Convert them into concise guidance:
 
 ```text
-Reference-informed visual cues: [entity] should use [stable cue], [object] should include [important part], [scene] should suggest [era/context]. Translate these cues into the same MUJI-inspired warm paper, gray, cardboard, wood, and muted-accent material system, with unified lighting, materials, and icon geometry. Do not include brand names, logos, copied packaging, store signage, or proprietary typography.
+Reference-informed visual cues: [entity] should use [stable cue], [object] should include [important part], [scene] should suggest [era/context]. Translate these cues into the same warm kraft-paper, dark brown-red printed linework, sparse charcoal detail, and Japanese lifestyle instruction-card system. Keep the drawing flat, front-facing, and unbranded; do not include brand names, logos, copied packaging, store signage, or proprietary typography.
 ```
 
 ## Record Keeping

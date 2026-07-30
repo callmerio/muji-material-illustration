@@ -1,10 +1,10 @@
 ---
 name: guizang-material-illustration
 description: |-
-  Generate MUJI-inspired restrained material illustrations, labeled explanatory visuals, material-styled chart illustrations, and data-first editorial images from articles, notes, product concepts, workplace reports, creator posts, tutorials, school materials, humanities topics, science explanations, screenshots, or chart data. Use when the user asks for 配图, 带字插图, 解释图, 图解插画, 概念拆解图, 图表美化, 数据图美化, 3D 图表, 汇报配图, 内容配图, 小学课文配图, 生物/化学/物理解释图, 人文类配图, process/loop/system diagrams, or wants GPT-Image / image generation to create supporting images. The default look is quiet Japanese utility: warm paper, matte natural materials, muted accents, generous whitespace, and no copied brand identity.
+  Generate Japanese minimalist kraft-paper lifestyle instruction-card illustrations, labeled explanatory visuals, flat printed chart illustrations, and data-first editorial images from articles, notes, product concepts, workplace reports, creator posts, tutorials, school materials, humanities topics, science explanations, screenshots, or chart data. Use when the user asks for 配图, 带字插图, 解释图, 图解插画, 概念拆解图, 图表美化, 数据图美化, 汇报配图, 内容配图, 小学课文配图, 生物/化学/物理解释图, 人文类配图, process/loop/system diagrams, or wants GPT-Image / image generation to create supporting images. The default look is a quiet kraft-paper life-instruction card: warm paper, dark brown-red print, fine two-dimensional linework, generous whitespace, and no copied brand identity.
 ---
 
-# MUJI-Inspired Material Illustration
+# Japanese Kraft-Paper Instruction Illustration
 
 Create supporting illustrations from source text, screenshots, or chart data. The output is an image-generation prompt plan plus generated raster images when image generation is available.
 
@@ -17,7 +17,7 @@ This skill does not replace the user's PPT skill or social-card text-layout skil
 1. Read the user's source text, screenshot, or data and identify the concepts or charts that deserve supporting images.
 2. Decide the working mode yourself from context. Do not ask the user to choose a mode unless the missing choice would materially change the result. If clarification is needed, ask naturally in one short sentence and offer a recommended default.
 3. If the source is a chart screenshot, extract only chart type, title, data, axis labels, axis range, tick labels, units, category order, and error bars. Do not carry over screenshot colors, typography, spacing, shadows, or background.
-4. If the concept, entity, object, historical/cultural context, scientific mechanism, species, material, brand, model, or place is likely unfamiliar or visually specific, look up reference information and/or reference images before prompting. Use references to understand and extract stable visual cues, then translate those cues into the MUJI-inspired material system. Do not reproduce logos, packaging, store signage, proprietary typography, or recognizable branded layouts.
+4. If the concept, entity, object, historical/cultural context, scientific mechanism, species, material, brand, model, or place is likely unfamiliar or visually specific, look up reference information and/or reference images before prompting. Use references to understand and extract stable visual cues, then translate those cues into the Japanese kraft-paper instruction-card system. Do not reproduce logos, packaging, store signage, proprietary typography, or recognizable branded layouts.
 5. Compress each non-chart concept into one plain-language explanation and 3-5 visible diagram labels when labels help. Some editorial or humanities illustrations may need fewer labels.
 6. Choose a visual structure for each concept:
    - Cycle: repeated work, feedback, loops, iteration.
@@ -28,7 +28,7 @@ This skill does not replace the user's PPT skill or social-card text-layout skil
    - Data-first scene: chart or metric panel embedded in a topical scene.
    - Scientific mechanism: object, parts, forces, reactions, or biological process.
    - Text scene: a literary, historical, or everyday scene that anchors an abstract idea.
-7. Write one image prompt per illustration. Make the prompt describe exact label text or chart data, aspect ratio, safe margins, references used, and the shared MUJI-inspired material style. Do not copy a brand identity.
+7. Write one image prompt per illustration. Make the prompt describe exact label text or chart data, aspect ratio, safe margins, references used, and the shared Japanese kraft-paper instruction-card style. Do not copy a brand identity.
 8. Generate the images with the `imagegen` skill or built-in image generation tool when available.
 9. Inspect each image. If labels are wrong, chart data is wrong, reference cues are misleading, unreadable, or clipped, regenerate with stricter constraints.
 10. Save prompts and final image paths in the task folder so the image set can be reproduced.
@@ -44,11 +44,11 @@ This skill does not replace the user's PPT skill or social-card text-layout skil
 
 ## Visual System
 
-Read `references/visual-style.md` before generating a new set. It defines the default MUJI-inspired material editorial style, aspect ratios, safe-area rules, muted palette, and no-brand-copy constraints.
+Read `references/visual-style.md` before generating a new set. It defines the default Japanese minimalist kraft-paper instruction-card style, print palette, two-dimensional linework, typography, aspect ratios, safe-area rules, and no-brand-copy constraints.
 
 Read `references/prompt-patterns.md` when drafting prompts. It contains reusable prompt shells for cycle, pipeline, hub, before/after, and layer-stack diagrams.
 
-Read `references/chart-beautify.md` when the input is a chart screenshot, table, metric list, benchmark result, or the user asks to beautify a chart. It covers how to preserve exact values while giving the chart the same restrained material illustration style.
+Read `references/chart-beautify.md` when the input is a chart screenshot, table, metric list, benchmark result, or the user asks to beautify a chart. It covers how to preserve exact values while converting the chart into a flat printed instruction-card graphic.
 
 Read `references/use-cases-and-routing.md` when deciding what kind of image to create from vague user input, education materials, humanities topics, or mixed article/data sources.
 
@@ -58,7 +58,7 @@ Read `references/qa-checklist.md` before delivering final images.
 
 ## Style Guardrails
 
-Treat MUJI as a high-level reference for quiet utility, natural materials, and careful editing. Never place `MUJI` or another brand name in the generated image, and never imitate branded packaging, store signage, proprietary typography, exact product silhouettes, or a recognizable branded layout. Use `references/visual-style.md` as the style source of truth.
+Use `references/visual-style.md` as the only visual source of truth. The default is a Japanese minimalist kraft-paper life-instruction card: warm clean paper with subtle fibers, dark brown-red or muted brick-red single-color print, sparse charcoal detail, fine two-dimensional hand-drawn linework, front-facing flat composition, orderly modules, and generous whitespace. Never place MUJI or another brand name, logo, wordmark, store sign, copied packaging, proprietary typography, photorealism, 3D rendering, perspective lens effects, heavy shadows, neon, metallic color, or complex gradients into the generated image.
 
 Create a task folder instead of writing loose assets next to this skill. Default to:
 
@@ -88,3 +88,5 @@ Before delivery, visually inspect each image and confirm:
 - Accent color is consistent across the set.
 - The image contains no accidental logos, watermarks, UI chrome, or unrelated English text.
 - The illustration can still be understood at social-card size.
+- The dominant dark brown-red or muted brick-red print and optional charcoal detail remain consistent across the set.
+- The image contains no accidental logos, watermarks, UI chrome, or unrelated English text.
